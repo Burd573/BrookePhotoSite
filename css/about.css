@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.nav {
+  position: fixed;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 150%;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 1.25rem;
+  font-family: "Dosis", sans-serif;
+  margin: 1rem auto;
+}
+
+.nav_links.active {
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(241, 229, 229, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav_links .logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.25rem;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: black;
+}
+.nav_links li a:hover {
+  font-family: "Dancing Script", cursive;
+}
+
+.about_container {
+  margin-top: 3rem;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow {
+  width: 26rem;
+  margin-right: 3rem;
+}
+
+.about_text {
+  width: 26rem;
+  padding: 1rem;
+}
+
+.about_text p {
+  margin-top: 2rem;
+}
+
+.about_text h3 {
+  text-align: center;
+}
+
+.img_slide {
+  height: 36rem;
+  width: 26rem;
+  border-radius: 100%;
+  box-shadow: 1rem 1rem rgba(241, 229, 229, 1);
+}
